@@ -13,10 +13,19 @@ const Timeline = () => {
     getMyTimeline();
   }, []);
   return (
-    <div>
-      <h1 className="overflow-x-hidden text-[2rem] sm:text-[1.75rem] md:text-[2.2rem] lg:text-[2.8rem] mb-4 font-extrabold">
-        Timeline
-      </h1>
+    <div id="education">
+      <div className="relative">
+        <h1
+          className="flex gap-4 items-center sm:text-[2.75rem] 
+          md:text-[2rem] lg:text-[2.8rem] leading-[56px] md:leading-[67px] 
+          lg:leading-[90px] tracking-[15px] mx-auto w-fit font-bold"
+          style={{
+            background: "hsl(222.2 84% 4.9%)",
+          }}>
+          Education
+        </h1>
+        <span className="absolute w-full h-1 top-7 sm:top-7 md:top-8 lg:top-11 z-[-1] bg-slate-200"></span>
+      </div>
       <ol className="relative border-s border-gray-200 dark:border-gray-700">
         {timeline &&
           timeline.map((element) => {

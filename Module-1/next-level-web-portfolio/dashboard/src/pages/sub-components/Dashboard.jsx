@@ -206,7 +206,7 @@ const Dashboard = () => {
               <TabsContent>
                 <Card>
                   <CardHeader className="px-7 gap-3">
-                    <CardTitle>Skills</CardTitle>
+                    <CardTitle>Technology Skills</CardTitle>
                   </CardHeader>
                   <CardContent className="grid sm:grid-cols-2 gap-4">
                     {skills && skills.length > 0 ? (
@@ -231,7 +231,7 @@ const Dashboard = () => {
               <TabsContent className="grid min-[1050px]:grid-cols-2 gap-4">
                 <Card>
                   <CardHeader className="px-7">
-                    <CardTitle>Software Applications</CardTitle>
+                    <CardTitle>Tools</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <Table>
@@ -280,7 +280,7 @@ const Dashboard = () => {
                 </Card>
                 <Card>
                   <CardHeader className="px-7 flex items-center justify-between flex-row">
-                    <CardTitle>Timeline</CardTitle>
+                    <CardTitle>Education Background</CardTitle>
                     <Button onClick={gotoMangeTimeline} className="w-fit">
                       Manage Timeline
                     </Button>

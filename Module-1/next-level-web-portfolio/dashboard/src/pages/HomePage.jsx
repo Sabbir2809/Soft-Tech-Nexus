@@ -9,7 +9,6 @@ import {
   LayoutGrid,
   LogOut,
   MessageSquareMore,
-  Package2,
   PanelLeft,
   PencilRuler,
   User,
@@ -48,10 +47,6 @@ const HomePage = () => {
     <div className="flex min-h-screen w-full flex-col bg-muted/40">
       <aside className="fixed inset-y-0 left-0 hidden w-14 flex-col border-r bg-background sm:flex z-50">
         <nav className="flex flex-col items-center gap-4 px-2 sm:py-5">
-          <Link className="group flex h-9 w-9 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base">
-            <Package2 className="h-4 w-4 transition-all group-hover:scale-110" />
-            <span className="sr-only">Acme Inc</span>
-          </Link>
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -201,11 +196,6 @@ const HomePage = () => {
           </SheetTrigger>
           <SheetContent side="left" className="sm:max-w-xs">
             <nav className="grid gap-6 text-lg font-medium">
-              <Link
-                className={`group flex h-10 w-10 shrink-0 items-center justify-center gap-2 rounded-full bg-primary text-lg font-semibold text-primary-foreground md:text-base`}>
-                <Package2 className="h-5 w-5 transition-all group-hover:scale-110" />
-                <span className="sr-only">Acme Inc</span>
-              </Link>
               <Link
                 href="#"
                 className={`flex items-center gap-4 px-2.5 ${
